@@ -86,6 +86,7 @@ $pastEventsCount = (int)$pastEventsCountStmt->fetchColumn();
                                 </div>
                                 <p class="event-description"><?= nl2br(escape(substr($event['description'], 0, 180))) ?><?= strlen($event['description']) > 180 ? '...' : '' ?></p>
                             </div>
+                            <br><br>
                         </a>
                     <?php endforeach; ?>
                 </div>
